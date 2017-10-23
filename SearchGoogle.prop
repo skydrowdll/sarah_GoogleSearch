@@ -1,0 +1,9 @@
+{
+	"modules" : { 
+		"SearchGoogle"  : {
+			"description": "Recherche un mot sur internet",
+			"version": "1.0",
+			"timeout_msec": 10000
+		}
+	}
+}
