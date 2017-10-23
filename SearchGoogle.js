@@ -6,7 +6,7 @@ var PARTIAL_RECO;
 
 exports.action = function(data, callback, config, SARAH){
 
-	maConfig = config.modules.wikipedia_scribe;
+	maConfig = config.modules.SearchGoogle;
 	ScribeSpeak = SARAH.ScribeSpeak;
 
 	FULL_RECO = SARAH.context.scribe.FULL_RECO;
@@ -43,7 +43,7 @@ function checkScribe(event, action, SARAH, callback) {
 			decodeScribe(SARAH.context.scribe.lastPartial, SARAH, callback);
 	
 		else {
-			SARAH.context.scribe.activePlugin('aucun (Liste des courses)');
+			SARAH.context.scribe.activePlugin('aucun (Google Search)');
 			ScribeSpeak("Désolé je n'ai pas compris. Merci de réessayer.", true);
 			return callback();
 		}
@@ -67,19 +67,19 @@ function decodeScribe(phrase, SARAH, callback) {
 		ScribeSpeak("Désolé je n'ai pas compris. Merci de réessayer.", true);
 		return callback();
 	}else{
-		ScribeSpeak("Recherche en cour ...", true);
+		ScribeSpeak("Recherche en coure ...", true);
 	}
 
 	search = match[1];
 
-	return query_wikipedia(search, SARAH, callback);
+	return query_SearchGoogle(search, SARAH, callback);
 }
 
 
 var re = /^(.*?)[.?!]\s*/
 var rp = /<\/?[^>]+(>|$)/g
 var ex = /^REDIRECT (\w+)\s*/g
-var query_wikipedia = function(search, SARAH, callback){
+var query_SearchGoogle = function(search, SARAH, callback){
 	var exec = require('child_process').exec;
 
 	ScribeSpeak("voici votre recherche sur "+search+".");
