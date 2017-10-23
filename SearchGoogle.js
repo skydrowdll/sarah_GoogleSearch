@@ -63,7 +63,7 @@ function decodeScribe(phrase, SARAH, callback) {
 	var match = phrase.match(rgxp);
 	console.log("MATCH: " + match);
 	if (!match || match.length <= 1){
-		SARAH.context.scribe.activePlugin('aucun (Wikipedia)');
+		SARAH.context.scribe.activePlugin('aucun (Google Search)');
 		ScribeSpeak("Désolé je n'ai pas compris. Merci de réessayer.", true);
 		return callback();
 	}else{
