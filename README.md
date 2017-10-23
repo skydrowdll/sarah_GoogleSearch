@@ -11,5 +11,5 @@ EXAMPLE ( browser = """C:\Program Files (x86)\Google\Chrome\Application\chrome.e
 
 UTILISATION
 
-- Dite "SARAH RECHERCHE VOITURE SUR INTERNET"
+- Dite "SARAH CHERCHE VOITURE SUR INTERNET"
 suite a cela une page du navigateur s'ouvrira avec la recherche de voiture.
