@@ -1,7 +1,7 @@
 
 # PLUGIN SARAH V3: GOOGLE SEARCH
 
-- le plugin Scribe (pour Sarah v3) permet d'ouvrir une page internet avec un mot recherché.
+- le plugin GOOGLE SEARCH (pour Sarah v3) permet d'ouvrir une page internet avec un mot recherché.
 
 INSTALATION
 - (1) Vous devez avoir installé et configuré le plugin SCRIBE => https://github.com/tilleul/Sarah.Scribe
